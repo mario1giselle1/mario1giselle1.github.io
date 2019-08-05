@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+   <title>Services</title>
+    <meta name="mario" content=" "/>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+
+    </head>
+    <body>
+    <main>
+           <nav>
+	<ul id="navs1">
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="About_Us.html">ABOUT
+		<ul id="navs12">
+		</ul></a></li>
+		<li><a href="FAX.html">FAX</a></li>
+		<li><a href="Contact_Page.html" >Contact Us</a></li>
+		<li><a href="layout3.html">ACCOUNT
+		<ul id="navs12">
+		    <li><a href="LogInPage.html">LOG IN</a></li>
+		     <li><a href="register_page.html">Register</a></li>
+		</ul></a></li>
+	</ul>
+</nav>
+ <div class="wrap">
+     <div id="arrow-left" class="arrow"></div>
+     <div id="slider">
+         <div class="slide slide1" id="slidings">
+             <div class="slide-content">
+                 <span>Welcome To My Partner APP <br> Service Center<br>Your Saving Gloal is one click away <br> To view services click any of the arrows</span>
+             </div>
+         </div>
+<!--           this section is undone-->
+           
+           
+           
+            <div class="slide slide2" id="slidings">
+             <div class="slide-content">
+                 <span>My Partner APP I SAVE<br>this is where as an indivual you can save between 3-24 months in this plan to register <a href="FAX.html">Click Here<br></a>for further details you cantact us <a href="Contact_Page.html">Here</a></span>
+             </div>
+         </div>
+            <div class="slide slide3" id="slidings">
+             <div class="slide-content">
+                 <span>My Partner APP WE SAVE<br>this is where as a Group you can save between 3-24 months in this plan to register <a href="FAX.html">Click Here<br></a>for further details you cantact us <a href="Contact_Page.html">Here</a></span>
+             </div>
+         </div>
+     </div>
+        </div>
+     <div id="arrow-right" class="arrow"></div>
+          <script type="text/javascript">
+        'use strict'
+//        alert("testing");
+        //Current represents the image were on
+        let sliderImages = document.querySelectorAll('.slide'),arrowLeft= document.querySelector('#arrow-left'),arrowRight= document.querySelector('#arrow-right'),Current=0;
+        //function to clear images
+        function Reset()
+        {
+            for(let i = 0; i < sliderImages.length; i++)
+                {
+                    sliderImages[i].style.display = 'none';
+                    
+            }
+        }
+              //initial slider
+        function startSlide()
+        {
+            Reset();
+     sliderImages[0].style.display = 'block';
+        }
+              //show rpeview
+              function slideLeft()
+              {
+                  Reset();
+                  sliderImages[Current - 1].style.display='block';
+                  Current--;
+              }
+              // this show whats coming up
+              function slideRight()
+              {
+                  Reset();
+                  sliderImages[Current+1].style.display = 'block';
+                  Current++;
+              }
+              // Left arrow clock
+ arrowLeft.addEventListener('click',function()
+              {
+                  if(Current === 0 )
+                      {
+                          Current = sliderImages.length;
+                      }
+                  slideLeft();
+              });
+                         // Right arrow clock
+ arrowRight.addEventListener('click',function()
+              {
+                  if(Current === sliderImages.length - 1 )
+                      {
+                          Current = -1;
+                      }
+                  slideRight();
+              });
+              
+        startSlide();
+        
+      </script>
+
+      </main>
+         <footer>
+     <p>My Partner App &copy; 2019</p>
+     <a href="index.html">HOME</a>
+     </footer>
+    </body>
+</html>

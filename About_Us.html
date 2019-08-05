@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <meta name ="Mario Matthias Chennell Allison" content=""/>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+<!--inline javascript-->
+<script type="text/javascript">
+    'use strict'
+// var anchor= document.createElement("a");
+//var testlink = document.createTextNode("Click Here");
+//anchor.appendChild("testlink");
+//var element = document.getElementById("testlink");
+//element.appendChild(anchor);
+function setinner(id,text) 
+{
+    document.getElementById(id).innerHTML=text;
+}
+
+function third()
+{
+    //this function is to clear the main screen and bring you to a new scree
+     document.getElementById("imgbox1").style.display = "none";
+     setinner("Welcome1","My Partner App");
+     setinner("Welcome2","the purpose of this Website is to alow persons to get information from savings agenies accross the globe and also to set up a personal platform where they can save thier money this website has many ongoing and upcoming features that are wonderful.To learn more about the user");
+    setinner("testlink","Click Here");
+    
+// document.getElementById("imgbox1").style.display = "none";
+}
+    </script>
+<body> 
+
+  <header class="sign_head">
+     <img img id="moneyicon" src="css/images/moneyicon.png" alt="moneyicons"/>
+      <div> <h1 class="sign_head second_header" >My Partner App</h1> </div>
+  </header>
+    <main>
+       <nav>
+	<ul id="navs1">
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="layout1.html">ABOUT
+		<ul id="navs12">
+		</ul></a></li>
+		<li><a href="FAX.html">FAX</a></li>
+		<li><a href="Contact_Page.html" >Contact Us</a></li>
+		<li><a href="layout3.html">ACCOUNT
+		<ul id="navs12">
+		    <li><a href="LogInPage.html">LOG IN</a></li>
+		     <li><a href="register_page.html">Register</a></li>
+		</ul></a></li>
+	</ul>
+</nav>
+<div class="about_section">
+<span class="about_sectiontxt1" id="Welcome1">Welcome To MyPartnerApp</span>
+    <span class="about_sectiontxt2" id="Welcome2">To Learn more</span><a href="#Developers"  id="testlink"> </a>
+    <div class="imgbox" id="imgbox1">
+        <input type="button" value="Click Here" onclick="third()" id="AbT_Button"/></div>
+     </div><br><div class="Spaced_Section">
+<div class="testemonials">
+<div class="inner">
+<h1><a name="Developers">Developers</a></h1>
+    <div class="border"></div>
+    <div class="Row">
+    <div class="Col">
+    <div class="testemonial"> <img class="marzi" src="css/images/marz.jpeg" alt="mario"/>
+        <div class="name">
+   <h1 class="Owner_Hs1">Mario Matthias</h1></div>
+    <div class="Stars"><img src="css/images/Emotes-face-laugh-icon.png" class="emoji__" alt="Emoji Face"/> &nbsp;
+    <img src="css/images/cool.png" alt="Emoji Face" class="emoji__"/> &nbsp;
+    <img src="css/images/Emoji-Rage-icon.png" alt="Emoji Face" class="emoji__"/> &nbsp;
+    <img src="css/images/Study-icon.png" alt="Emoji Face" class="emoji__"/></div>
+<p>Name: Mario Mthhias</p>Age:25<p>Bio:Mario Matthias is a student of the excelsior community 
+college where he is persuing a degree in management information system.</p>
+        </div></div>
+
+    <div class="Col">
+    <div class="testemonial"> <img class="marzi" src="css/images/chenn.jpeg" alt="Chenn"/>
+        <div class="name">
+   <h1 class="Owner_Hs1">Chennell Allison</h1></div>
+    <div class="Stars"><img src="css/images/Emotes-face-laugh-icon.png" class="emoji__" alt="Emoji Face"/> &nbsp;
+    <img src="css/images/cool.png" alt="Emoji Face" class="emoji__"/> &nbsp;
+    <img src="css/images/Emoji-Rage-icon.png" alt="Emoji Face" class="emoji__"/> &nbsp;
+    <img src="css/images/Study-icon.png" alt="Emoji Face" class="emoji__"/></div>
+<p>Name: Chennell Allison</p>Age:24<p>Bio:Chennell Allison is a student of the excelsior community 
+        college where he is persuing a degree in management information system.</p>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+        </div></div>
+    </main>
+    <footer>
+     <p>My Partner App &copy; 2019</p>
+     <a href="index.html">HOME</a>
+     </footer>
+</body>
+</html>
